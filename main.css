@@ -1,0 +1,120 @@
+/*font-family: 'Big Shoulders Display', cursive;
+font-family: 'Lexend Deca', sans-serif;
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 0.9375rem;
+  min-height: 100vh;
+  font-family: 'Lexend Deca', sans-serif;
+  color: hsl(0, 0%, 95%);
+  display: flex;
+  justify-content: center;
+}
+
+main {
+  position: relative;
+  width: 100%;
+  max-width: 1440px;
+  background-color: hsl(0, 0%, 95%);
+  margin: auto;
+}
+h1 {
+  font-family: 'Big Shoulders Display', cursive;
+  font-size: 2rem;
+  margin-top: 1em;
+}
+
+p {
+  line-height: 1.6;
+  color: hsla(0, 0%, 100%, 0.75);
+  margin-top: 1.5em;
+}
+button {
+  border: none;
+  font-family: 'Lexend Deca', sans-serif;
+  padding: 0.8em 2.5em;
+  border-radius: 1.5em;
+  margin-top: 7em;
+  cursor: pointer;
+  border: 1px solid transparent;
+}
+footer {
+  color: black;
+  position: absolute;
+  left: 50%;
+  bottom: 1rem;
+  transform: translateX(-50%);
+}
+
+.card-wrap {
+  display: flex;
+  width: 80%;
+  margin: 4em auto;
+}
+
+.card {
+  padding: 4em;
+}
+
+.card-one {
+  background-color: hsl(31, 77%, 52%);
+  border-top-left-radius: 0.7rem;
+  border-bottom-left-radius: 0.7rem;
+}
+
+.card-two {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.card-three {
+  background-color: hsl(179, 100%, 13%);
+  border-top-right-radius: 0.7rem;
+  border-bottom-right-radius: 0.7rem;
+}
+
+.card-one button {
+  color: hsl(31, 77%, 52%);
+}
+
+.card-two button {
+  color: hsl(184, 100%, 22%);
+}
+.card-three button {
+  color: hsl(179, 100%, 13%);
+}
+
+button:hover {
+  background: none;
+  border: 1px solid hsl(0, 0%, 95%);
+  color: hsl(0, 0%, 95%);
+}
+
+@media (max-width: 450px) {
+  .card-wrap {
+    flex-direction: column;
+    margin: 2em auto;
+    width: 90%;
+  }
+  .card {
+    width: 100%;
+  }
+  .card-one {
+    border-top-right-radius: 0.7em;
+    border-bottom-left-radius: 0;
+  }
+  .card-three {
+    border-bottom-left-radius: 0.7em;
+    border-top-right-radius: 0;
+  }
+  footer {
+    opacity: 0;
+  }
+}
